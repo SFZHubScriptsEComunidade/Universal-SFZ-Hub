@@ -48,9 +48,9 @@ local Database = {
         Name = "Scripts Aleatórios", Icon = "⚙️", -- (5 Scripts) - FIXO NO TOPO
         Key = {}, 
         NoKey = {
-            ["Aim Bot Mira - JOGOS DE TIRO"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Aimbot-Mobile-34677"))() end,
+            ["Aim Bot - Jogos de Tiro"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Aimbot-Mobile-34677"))() end,
             ["Emotes"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Emotes-32020"))() end,
-            ["Aim Bot ESP"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/agresiv111/script/refs/heads/main/main.lua"))() end,
+            ["Aim Bot+ESP"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/agresiv111/script/refs/heads/main/main.lua"))() end,
             ["Shift Lock"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Shift-Lock-by-Jorge03IsGamer-54009"))() end,
             ["Fly"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Fly-gui-54742"))() end,
         }
