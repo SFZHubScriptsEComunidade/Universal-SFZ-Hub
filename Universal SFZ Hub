@@ -41,15 +41,15 @@ local function ToggleFavorite(scriptName, gameName)
     end
 end
 
--- [PARTE 1: DATABASE ATUALIZADA]
+-- [PARTE 1: DATABASE ATUALIZADA - V3.3]
 local Database = {
     [1] = {
         Name = "Scripts Aleatórios", Icon = "⚙️",
         Key = {}, 
         NoKey = {
-            ["Aim Bot Mira"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Aimbot-Mobile-34677"))() end,
+            ["Aim Bot Jogos de Tiro"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Aimbot-Mobile-34677"))() end,
             ["Emotes"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Emotes-32020"))() end,
-            ["Aim Bot ESP"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/agresiv111/script/refs/heads/main/main.lua"))() end,
+            ["Aim Bot + ESP"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/agresiv111/script/refs/heads/main/main.lua"))() end,
             ["Shift Lock"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Shift-Lock-by-Jorge03IsGamer-54009"))() end,
             ["Fly"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Fly-gui-54742"))() end,
         }
@@ -62,7 +62,7 @@ local Database = {
             ["Aurora"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Jadelly261/BloxFruits/main/Aurora",true))() end,
             ["Arceney"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/Python/refs/heads/main/BloxFruit-XYZ.lua"))() end,
             ["Deep Hub"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/GoblinKun009/script/refs/heads/main/Deep", true)) end,
-            ["Hoho Hub"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))() end,
+            ["Hoho Hub BF"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))() end,
             ["Solix Hub"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/debunked69/Solixreworkkeysystem/refs/heads/main/solix%20new%20keyui.lua"))() end,
             ["Thunder Z"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/ThunderZ-05/HUB/main/TestKey"))() end,
         },
@@ -83,7 +83,7 @@ local Database = {
             ["OMG Hub"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/refs/heads/main/FarmingFlags"))() end,
             ["Hyper Hub"] = function() repeat wait() until game:IsLoaded() loadstring(game:HttpGet("https://raw.githubusercontent.com/DookDekDEE/Hyper/main/script.lua"))() end,
             ["Legends Handles Hub"] = function() loadstring(game:HttpGet(('https://pastefy.app/3fQ9psgV/raw'),true))() end,
-            ["Hoho Hub"] = function() loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))() end,
+            ["Hoho Hub KL"] = function() loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))() end,
             ["Faziam Hub"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/ZaRdoOx/Fazium-files/main/Loader"))() end,
             ["Auto Fish KL"] = function() loadstring(game:HttpGet("https://api.junkie-development.de/api/v1/luascripts/public/042ab4ec0ef175451b3fd805ee7205ff95b1b5ca7541d4be9678087b58169ab3/download"))() end,
             ["Nexor Hub"] = function() loadstring(game:HttpGet('https://raw.githubusercontent.com/NexorHub/Games/refs/heads/main/Universal/Scripts.lua'))() end,
@@ -100,7 +100,7 @@ local Database = {
         Key = { 
             ["Nousigi Hub"] = function() loadstring(game:HttpGet("https://nousigi.com/loader.lua"))() end, 
             ["Zenith Hub"] = function() loadstring(game:HttpGet("https://zenithhub.cloud/panel/script"))() end,
-            ["Rift Hub"] = function() loadstring(game:HttpGet("https://rifton.top/loader.lua"))() end,
+            ["Rift Hub TF"] = function() loadstring(game:HttpGet("https://rifton.top/loader.lua"))() end,
             ["Lunor Hub"] = function() loadstring(game:HttpGet("https://lunor.dev/loader"))() end,
             ["Chyo Hub"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/kaisenlmao/loader/refs/heads/main/chiyo.lua"))() end,
             ["NS Hub Forge"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/OhhMyGehlee/sh/refs/heads/main/a"))() end,
@@ -132,13 +132,6 @@ local Database = {
         }
     },
     [6] = {
-        Name = "Tsunami vs Brainrots", Icon = "🌊",
-        Key = {
-            ["Rift Hub"] = function() loadstring(game:HttpGet("https://rifton.top/loader.lua"))() end,
-        },
-        NoKey = {}
-    },
-    [7] = {
         Name = "Brookhaven", Icon = "🏠",
         Key = { 
             ["Cartola Hub BH"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Cartola-hub-brookhaven-57407"))() end,
@@ -151,7 +144,7 @@ local Database = {
             ["Coquette Hub BH"] = function() loadstring(game:HttpGet("https://ghostbin.axel.org/paste/8z4hy/raw"))() end,
         }
     },
-    [8] = {
+    [7] = {
         Name = "Volleyball Legends", Icon = "🏐",
         Key = {
             ["Napoleon Hub"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/raydjs/napoleonHub/refs/heads/main/src.lua"))() end,
@@ -161,10 +154,10 @@ local Database = {
         },
         NoKey = {
             ["Sigma Hub"] = function() loadstring(game:HttpGet('https://raw.githubusercontent.com/Xm2iufas09ijmF/sigma-hub/refs/heads/main/temp.lua'))() end,
-            ["Hitbox Expander"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/UPD-Volleyball-Legends-Hitbox-expander-NO-KEY-63949"))() end,
+            ["Hitbox Expander VL"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/UPD-Volleyball-Legends-Hitbox-expander-NO-KEY-63949"))() end,
         }
     },
-    [9] = {
+    [8] = {
         Name = "99 Noites", Icon = "🌲",
         Key = {
             ["H4x"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/H4xScripts/Loader/refs/heads/main/loader.lua",true))() end,
@@ -173,8 +166,15 @@ local Database = {
         NoKey = {
             ["Void ware"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/VW-Add/main/nightsintheforest.lua",true))() end,
             ["Foxname"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/99-Nights-in-the-Forest-Foxname-Hub-57131"))() end,
-            ["Simplicitiy"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/husyDTrd"))() end,
+            ["Simplicity"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/husyDTrd"))() end,
         }
+    },
+    [9] = {
+        Name = "Tsunami vs Brainrots", Icon = "🌊", -- Ordem: Abaixo de 99 Noites
+        Key = {
+            ["Rift Hub"] = function() loadstring(game:HttpGet("https://rifton.top/loader.lua"))() end,
+        },
+        NoKey = {}
     },
     [10] = {
         Name = "Fish", Icon = "🎣",
@@ -220,26 +220,44 @@ local Database = {
         NoKey = {}
     },
     [15] = {
-        Name = "Grow a Garden", Icon = "🌴",
-        Key = { ["Ronix Hub"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/Grow-a-Garden-Best-Autofarm-Script-GUI-73698"))() end },
-        NoKey = { ["Speed Hub"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua"))() end }
+        Name = "Slap Battles", Icon = "🥊 Novo!", -- Ordem: Acima de Build a Boat
+        Key = {
+            ["Ronix Hub"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/Slap-Battles-Best-Script-OP-GUI-Slap-Aura-85516"))() end,
+            ["SB Hub (Win)"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/UPDATE-Slap-Battles-INSTANT-WIN-l-Kraken-Abyss-Auto-Win-l-God-Mod-l-Full-86843"))() end,
+            ["Nagi Hub"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/UPDATE-Slap-Battles-Slap-Battle-50314"))() end,
+        },
+        NoKey = {
+            ["SB Hub v2"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/UPDATE-Slap-Battles-Slap-Battle-62060"))() end,
+            ["Project Astro SB"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/HALLOWEEN-Slap-Battles-Project-Astro-Reborn-Slap-Battle-60628"))() end,
+            ["Sisyphus Prime"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/UPDATE-Slap-Battles-Slap-Battle-55319"))() end,
+            ["SB Hub v2"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/UPDATE-Slap-Battles-Slap-battles-script-NO-KEY-51094"))() end,
+            ["SB Hub Admin"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/Slap-Battles-Edgelord-Admin-38263"))() end,
+        }
     },
     [16] = {
         Name = "Build a Boat", Icon = "🛶",
         Key = { ["BABFT Hub"] = function() loadstring(game:HttpGet('https://raw.githubusercontent.com/TheRealAsu/BABFT/refs/heads/main/Loader.lua'))() end },
-        NoKey = { ["Roubar Construção"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/max2007killer/auto-build-not-limit/main/buildaboatv2obs.txt", true))() end }
+        NoKey = { ["Roubar Construções"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/max2007killer/auto-build-not-limit/main/buildaboatv2obs.txt", true))() end }
     },
     [17] = {
+        Name = "Grow a Garden", Icon = "🌴",
+        Key = { 
+            ["Ronix Hub"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/Grow-a-Garden-Best-Autofarm-Script-GUI-73698"))() end,
+            ["Speed Hub GG"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua"))() end -- Speed Hub movido para cá
+        },
+        NoKey = {}
+    },
+    [18] = {
         Name = "Campos de Batalha", Icon = "👊",
         Key = {},
         NoKey = { ["Aim Bot-Aim Lock"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Cyborg883/CombatGUI/refs/heads/main/TSBCombatGUI"))() end }
     },
-    [18] = {
+    [19] = {
         Name = "Death Ball", Icon = "💀",
         Key = { ["Native Hub"] = function() loadstring(game:HttpGet("https://getnative.cc/script/loader"))() end },
         NoKey = {}
     },
-    [19] = {
+    [20] = {
         Name = "Dead Rails", Icon = "🚂",
         Key = {},
         NoKey = { ["DR Hub"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/gumanba/Scripts/refs/heads/main/DeadRails", true))() end }
@@ -371,7 +389,6 @@ local function ShowExecuteConfirmation(scriptName, executeFunc)
 end
 
 local function LoadScripts(tbl, gameData)
-    -- Limpa os scripts antigos e qualquer padding anterior
     for _, v in pairs(ScriptList:GetChildren()) do 
         if v:IsA("Frame") or v:IsA("TextLabel") or v:IsA("TextButton") or v:IsA("UIPadding") then v:Destroy() end 
     end
@@ -380,11 +397,11 @@ local function LoadScripts(tbl, gameData)
     if tbl then for _ in pairs(tbl) do count = count + 1 end end
     
     if count == 0 then
-        -- Adiciona um Padding para alinhar o "VAZIO" com o topo da categoria (Altura Rosa)
         local Padding = Instance.new("UIPadding", ScriptList)
         Padding.PaddingTop = UDim.new(0, 5)
 
         local EmptyMsg = Instance.new("TextLabel", ScriptList)
+        EmptyMsg.AutoLocalize = false -- Adicionado
         EmptyMsg.Size = UDim2.new(1, -10, 0, 30)
         EmptyMsg.BackgroundTransparency = 1
         EmptyMsg.Text = "🚫 VAZIO..."
@@ -393,7 +410,6 @@ local function LoadScripts(tbl, gameData)
         EmptyMsg.TextSize = 14
         EmptyMsg.TextTransparency = 0.4
         EmptyMsg.TextXAlignment = Enum.TextXAlignment.Center
-        EmptyMsg.TextYAlignment = Enum.TextYAlignment.Top
     else
         for name, data in pairs(tbl) do
             local executeFunc = type(data) == "function" and data or data.func
@@ -403,12 +419,14 @@ local function LoadScripts(tbl, gameData)
             ItemFrame.Size = UDim2.new(1, -10, 0, 35); ItemFrame.BackgroundTransparency = 1
             
             local b = Instance.new("TextButton", ItemFrame)
+            b.AutoLocalize = false -- BLOQUEIA TRADUÇÃO DO "FLY"
             b.Size = UDim2.new(0.82, 0, 1, 0); b.BackgroundColor3 = Color3.fromRGB(110, 0, 190); b.Text = name; 
             b.TextColor3 = Color3.new(1,1,1); b.Font = Enum.Font.GothamBold; b.TextSize = 14
             Instance.new("UICorner", b).CornerRadius = UDim.new(0, 8)
             b.MouseButton1Click:Connect(function() ShowExecuteConfirmation(name, executeFunc) end)
 
             local favBtn = Instance.new("TextButton", ItemFrame)
+            favBtn.AutoLocalize = false -- Adicionado
             favBtn.Size = UDim2.new(0.15, 0, 1, 0); favBtn.Position = UDim2.new(0.85, 0, 0, 0); favBtn.BackgroundColor3 = Color3.fromRGB(60, 0, 110)
             
             local function UpdateStar()
@@ -486,6 +504,7 @@ for i = 1, #Database do
     local info = Database[i]
     if info then
         local btn = Instance.new("TextButton", Sidebar)
+        btn.AutoLocalize = false -- IMPEDE TRADUÇÃO DOS NOMES DOS JOGOS
         btn.Size = UDim2.new(1, -10, 0, 40); btn.BackgroundColor3 = Color3.fromRGB(75, 0, 130); btn.Text = info.Icon .. " " .. info.Name; btn.TextColor3 = Color3.new(1,1,1); btn.Font = Enum.Font.GothamBold; btn.TextSize = 13
         Instance.new("UICorner", btn); btn.MouseButton1Click:Connect(function() OpenGame(info) end)
     end
@@ -628,19 +647,21 @@ local function ShowDiscordInvite()
     InviteFrame.Name = "DiscordInviteFrame"; InviteFrame.Size = UDim2.new(0, 400, 0, 200); InviteFrame.Position = UDim2.new(0.5, -200, 0.5, -100); InviteFrame.BackgroundColor3 = Color3.fromRGB(10, 0, 20); InviteFrame.ZIndex = 9000
     Instance.new("UICorner", InviteFrame).CornerRadius = UDim.new(0, 15)
     
-    -- Borda Padronizada no Convite
     local Stroke = Instance.new("UIStroke", InviteFrame)
     Stroke.Color = Color3.fromRGB(120, 0, 210)
     Stroke.Thickness = 2
 
     local TitleD = Instance.new("TextLabel", InviteFrame)
+    TitleD.AutoLocalize = false -- Adicionado
     TitleD.Text = "Discord - SFZ Hub | Scripts & Comunidade"; TitleD.Size = UDim2.new(1, -40, 0, 40); TitleD.Position = UDim2.new(0, 20, 0, 20); TitleD.TextColor3 = Color3.new(1,1,1); TitleD.Font = Enum.Font.GothamBold; TitleD.TextSize = 18; TitleD.TextXAlignment = "Left"; TitleD.BackgroundTransparency = 1; TitleD.ZIndex = 9001
 
     local MsgD = Instance.new("TextLabel", InviteFrame)
+    MsgD.AutoLocalize = false -- Adicionado
     MsgD.Text = "Entre no nosso discord lá tem muito mais."; MsgD.Size = UDim2.new(1, -40, 0, 40); MsgD.Position = UDim2.new(0, 20, 0, 65); MsgD.TextColor3 = Color3.fromRGB(180, 180, 180); MsgD.Font = Enum.Font.Gotham; MsgD.TextSize = 16; MsgD.TextXAlignment = "Left"; MsgD.BackgroundTransparency = 1; MsgD.ZIndex = 9001
 
     local OkBtn = Instance.new("TextButton", InviteFrame)
-    OkBtn.Text = "OK"; OkBtn.Size = UDim2.new(0, 140, 0, 40); OkBtn.Position = UDim2.new(0.5, -70, 0.8, -10); OkBtn.BackgroundColor3 = Color3.fromRGB(110, 0, 190); OkBtn.TextColor3 = Color3.new(1, 1, 1); OkBtn.Font = Enum.Font.GothamBold; OkBtn.TextSize = 18; OkBtn.ZIndex = 9001; Instance.new("UICorner", OkBtn).CornerRadius = UDim.new(0, 10)
+    OkBtn.AutoLocalize = false -- BLOQUEIA TRADUÇÃO DO "OK!"
+    OkBtn.Text = "OK!"; OkBtn.Size = UDim2.new(0, 140, 0, 40); OkBtn.Position = UDim2.new(0.5, -70, 0.8, -10); OkBtn.BackgroundColor3 = Color3.fromRGB(110, 0, 190); OkBtn.TextColor3 = Color3.new(1, 1, 1); OkBtn.Font = Enum.Font.GothamBold; OkBtn.TextSize = 18; OkBtn.ZIndex = 9001; Instance.new("UICorner", OkBtn).CornerRadius = UDim.new(0, 10)
 
     OkBtn.MouseButton1Click:Connect(function() if setclipboard then setclipboard("https://discord.gg/G5j355jhU") Notify("COPIADO", "Link do Discord copiado!") end InviteFrame:Destroy() end)
 end
