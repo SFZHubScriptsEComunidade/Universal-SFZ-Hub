@@ -594,10 +594,13 @@ end
 CreateTopBtn("X", UDim2.new(1, -40, 0, 6), Color3.fromRGB(220, 50, 50), ShowCloseConfirmation)
 
 CreateTopBtn("—", UDim2.new(1, -80, 0, 6), Color3.fromRGB(60, 60, 180), function()
-    Holder.Visible = not Holder.Visible
-    -- Ajustado para manter a largura atual ao minimizar
-    local targetSize = Holder.Visible and UDim2.new(0, MainFrame.Size.X.Offset, 0, 380) or UDim2.new(0, MainFrame.Size.X.Offset, 0, 45)
-    MainFrame:TweenSize(targetSize, "Out", "Quart", 0.3, true)
+    if Holder.Visible then
+        Holder.Visible = false
+        MainFrame:TweenSize(UDim2.new(0, MainFrame.Size.X.Offset, 0, 45), "Out", "Quart", 0.3, true)
+    else
+        Holder.Visible = true
+        MainFrame:TweenSize(UDim2.new(0, MainFrame.Size.X.Offset, 0, 380), "Out", "Quart", 0.3, true)
+    end
 end)
 
 -- 4. SISTEMA DE ARRASTE E REDIMENSIONAMENTO (ATUALIZADO)
@@ -676,9 +679,20 @@ FloatStroke.Color = Color3.fromRGB(120, 0, 210)
 FloatStroke.Thickness = 2.5
 
 FloatBtn.Active = true; FloatBtn.Draggable = true
+
 FloatBtn.MouseButton1Click:Connect(function()
-    if not MainFrame.Visible then MainFrame.Size = UDim2.new(0, 0, 0, 0); MainFrame.Visible = true; MainFrame:TweenSize(UDim2.new(0, 620, 0, 380), "Out", "Back", 0.5, true)
-    else MainFrame:TweenSize(UDim2.new(0, 0, 0, 0), "In", "Back", 0.4, true); task.wait(0.4); MainFrame.Visible = false; MainFrame.Size = UDim2.new(0, 620, 0, 380) end
+    if not MainFrame.Visible then
+        Holder.Visible = true 
+        
+        MainFrame.Size = UDim2.new(0, 0, 0, 0)
+        MainFrame.Visible = true
+        MainFrame:TweenSize(UDim2.new(0, 620, 0, 380), "Out", "Back", 0.5, true)
+    else 
+        MainFrame:TweenSize(UDim2.new(0, 0, 0, 0), "In", "Back", 0.4, true)
+        task.wait(0.4)
+        MainFrame.Visible = false
+        MainFrame.Size = UDim2.new(0, 620, 0, 380) 
+    end
 end)
 
 local IntroFrame = Instance.new("Frame", ScreenGui)
