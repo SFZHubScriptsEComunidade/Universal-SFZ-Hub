@@ -41,14 +41,14 @@ local function ToggleFavorite(scriptName, gameName)
     end
 end
 
--- [PARTE 1: DATABASE ATUALIZADA - V3.3]
+-- [PARTE 1: DATABASE ATUALIZADA - V3.4]
 local Database = {
     [1] = {
         Name = "Scripts Aleatórios", Icon = "⚙️",
         Key = {}, 
         NoKey = {
             ["Aim Bot Jogos de Tiro"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Aimbot-Mobile-34677"))() end,
-            ["Emotes"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Emotes-32020"))() end,
+            ["Emotes"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Emotes-32020")) end,
             ["Aim Bot + ESP"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/agresiv111/script/refs/heads/main/main.lua"))() end,
             ["Shift Lock"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Shift-Lock-by-Jorge03IsGamer-54009"))() end,
             ["Fly"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Fly-gui-54742"))() end,
@@ -96,6 +96,60 @@ local Database = {
         }
     },
     [4] = {
+        Name = "Dungeon Heroes", Icon = "🛡️",
+        Key = {},
+        NoKey = {
+            ["Valor Hub"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/eselfins31/Valor-Hub/main/Dungeon%20Heroes/Unified_protected.lua", true))() end,
+        }
+    },
+    [5] = {
+        Name = "Tsunami vs Brainrots", Icon = "🌊",
+        Key = {
+            ["Rift Hub"] = function() loadstring(game:HttpGet("https://rifton.top/loader.lua"))() end,
+        },
+        NoKey = {
+            ["TvsB Hub"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/gumanba/Scripts/refs/heads/main/EscapeTsunamiForBrainrots", true))() end,
+        }
+    },
+    [6] = {
+        Name = "Anime Weapons", Icon = "⚔️",
+        Key = {},
+        NoKey = {
+            ["AW Hub"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptsRBXdotCom/scripts/refs/heads/main/animeweapons"))() end,
+        }
+    },
+    [7] = {
+        Name = "Pet Simulator 99", Icon = "🐾",
+        Key = {
+            ["Zap Hub"] = function() loadstring(game:HttpGet('https://zaphub.xyz/Exec'))() end,
+        },
+        NoKey = {}
+    },
+    [8] = {
+        Name = "PETS GO", Icon = "🐶",
+        Key = {
+            ["Zap Hub"] = function() loadstring(game:HttpGet('https://zaphub.xyz/Exec'))() end,
+        },
+        NoKey = {}
+    },
+    [9] = { 
+        Name = "Steal a Brainrot", Icon = "👽",
+        Key = {
+            ["Overflow"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/OverflowBGSI/Overflow/refs/heads/main/loader.txt"))() end,
+            ["Senju"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/wk11PpEw"))() end,
+            ["Trax Spawner"] = function() loadstring(game:HttpGet("https://gitlab.com/traxscriptss/traxscriptss/-/raw/main/visual2.lua"))() end,
+            ["Luminum Hub"] = function() loadstring(game:HttpGet("http://luminon.top/loader.lua"))() end,   
+        },
+        NoKey = {
+            ["Lurk Hack V4"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/egor2078f/lurkhackv4/refs/heads/main/main.lua", true))() end,
+            ["Devil Ugly"] = function() loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/53325754de16c11fbf8bf78101c1c881.lua"))() end,
+            ["Dofug"] = function() loadstring(game:HttpGet("https://gist.githubusercontent.com/UCT-hub/b8fcd843274469d860f91b041eb7f52f/raw/7d491ea8078224e31b8850192bd3f2da37acec8f/UCTHUBDOFUG"))() end,
+            ["Ajazz"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/onliengamerop/Steal-a-brainrot/refs/heads/main/Protected_3771863424757750.lua.txt"))() end,
+            ["Liphyr"] = function() loadstring(game:HttpGet("https://pastefy.app/9fgffG4l/raw"))() end,
+            ["Paintball Lag"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/LucasggkX/Games/refs/heads/main/Paintball.lua"))() end,
+        }
+    },
+    [10] = {
         Name = "The Forge", Icon = "⛏️",
         Key = { 
             ["Nousigi Hub"] = function() loadstring(game:HttpGet("https://nousigi.com/loader.lua"))() end, 
@@ -114,24 +168,7 @@ local Database = {
             ["Shaizy Hub"] = function() loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/d29f750a5d2c74070b792230ccde0f69.lua"))() end,
         }
     },
-    [5] = { 
-        Name = "Steal a Brainrot", Icon = "👽",
-        Key = {
-            ["Overflow"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/OverflowBGSI/Overflow/refs/heads/main/loader.txt"))() end,
-            ["Senju"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/wk11PpEw"))() end,
-            ["Trax Spawner"] = function() loadstring(game:HttpGet("https://gitlab.com/traxscriptss/traxscriptss/-/raw/main/visual2.lua"))() end,
-            ["Luminum Hub"] = function() loadstring(game:HttpGet("http://luminon.top/loader.lua"))() end,   
-        },
-        NoKey = {
-            ["Lurk Hack V4"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/egor2078f/lurkhackv4/refs/heads/main/main.lua", true))() end,
-            ["Devil Ugly"] = function() loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/53325754de16c11fbf8bf78101c1c881.lua"))() end,
-            ["Dofug"] = function() loadstring(game:HttpGet("https://gist.githubusercontent.com/UCT-hub/b8fcd843274469d860f91b041eb7f52f/raw/7d491ea8078224e31b8850192bd3f2da37acec8f/UCTHUBDOFUG"))() end,
-            ["Ajazz"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/onliengamerop/Steal-a-brainrot/refs/heads/main/Protected_3771863424757750.lua.txt"))() end,
-            ["Liphyr"] = function() loadstring(game:HttpGet("https://pastefy.app/9fgffG4l/raw"))() end,
-            ["Paintball Lag"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/LucasggkX/Games/refs/heads/main/Paintball.lua"))() end,
-        }
-    },
-    [6] = {
+    [11] = {
         Name = "Brookhaven", Icon = "🏠",
         Key = { 
             ["Cartola Hub BH"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Cartola-hub-brookhaven-57407"))() end,
@@ -144,7 +181,7 @@ local Database = {
             ["Coquette Hub BH"] = function() loadstring(game:HttpGet("https://ghostbin.axel.org/paste/8z4hy/raw"))() end,
         }
     },
-    [7] = {
+    [12] = {
         Name = "Volleyball Legends", Icon = "🏐",
         Key = {
             ["Napoleon Hub"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/raydjs/napoleonHub/refs/heads/main/src.lua"))() end,
@@ -157,7 +194,7 @@ local Database = {
             ["Hitbox Expander VL"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/UPD-Volleyball-Legends-Hitbox-expander-NO-KEY-63949"))() end,
         }
     },
-    [8] = {
+    [13] = {
         Name = "99 Noites", Icon = "🌲",
         Key = {
             ["H4x"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/H4xScripts/Loader/refs/heads/main/loader.lua",true))() end,
@@ -169,14 +206,7 @@ local Database = {
             ["Simplicity"] = function() loadstring(game:HttpGet("https://pastebin.com/raw/husyDTrd"))() end,
         }
     },
-    [9] = {
-        Name = "Tsunami vs Brainrots", Icon = "🌊", -- Ordem: Abaixo de 99 Noites
-        Key = {
-            ["Rift Hub"] = function() loadstring(game:HttpGet("https://rifton.top/loader.lua"))() end,
-        },
-        NoKey = {}
-    },
-    [10] = {
+    [14] = {
         Name = "Fish", Icon = "🎣",
         Key = { ["Space Hub"] = function() loadstring(game:HttpGet('https://raw.githubusercontent.com/Space-RB/Script/refs/heads/main/loader.lua'))() end },
         NoKey = { 
@@ -185,7 +215,7 @@ local Database = {
             ["AeroWare"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/cayden305/Scripts/refs/heads/main/FischObfuscated.lua"))() end,
         }
     },
-    [11] = {
+    [15] = {
         Name = "Forsaken", Icon = "🎭",
         Key = { 
             ["Moon Hub"] = function() loadstring(game:HttpGet('https://raw.githubusercontent.com/m00ndiety/Moondiety/refs/heads/main/Loader'))() end,
@@ -194,7 +224,7 @@ local Database = {
         },
         NoKey = { ["SNT Hub"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Snowt69/SNT-HUB/refs/heads/main/Forsaken"))() end }
     },
-    [12] = {
+    [16] = {
         Name = "Murder Mystery 2", Icon = "🔪",
         Key = { ["Capybara Hub"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/BaconScrr/Murder-Mystery-2/refs/heads/main/Capybara%20Hub"))() end },
         NoKey = { 
@@ -202,7 +232,7 @@ local Database = {
             ["MM2 Hub"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/wave-code-top/xhub/refs/heads/main/xhub.lua", true))() end 
         }
     },
-    [13] = {
+    [17] = {
         Name = "Blade Ball", Icon = "🗡️",
         Key = {},
         NoKey = { 
@@ -211,7 +241,7 @@ local Database = {
             ["Argon Hub"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Argon-Hub-X-KEYLESS-57532"))() end,
         }
     },
-    [14] = {
+    [18] = {
         Name = "Blue Lock", Icon = "⚽",
         Key = { 
             ["Legends Handles"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/legends-handles/blue-lock/main/loader.lua"))() end,
@@ -219,8 +249,8 @@ local Database = {
         },
         NoKey = {}
     },
-    [15] = {
-        Name = "Slap Battles", Icon = "🥊 Novo!", -- Ordem: Acima de Build a Boat
+    [19] = {
+        Name = "Slap Battles", Icon = "🥊",
         Key = {
             ["Ronix Hub"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/Slap-Battles-Best-Script-OP-GUI-Slap-Aura-85516"))() end,
             ["SB Hub (Win)"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/UPDATE-Slap-Battles-INSTANT-WIN-l-Kraken-Abyss-Auto-Win-l-God-Mod-l-Full-86843"))() end,
@@ -234,30 +264,30 @@ local Database = {
             ["SB Hub Admin"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/Slap-Battles-Edgelord-Admin-38263"))() end,
         }
     },
-    [16] = {
+    [20] = {
         Name = "Build a Boat", Icon = "🛶",
         Key = { ["BABFT Hub"] = function() loadstring(game:HttpGet('https://raw.githubusercontent.com/TheRealAsu/BABFT/refs/heads/main/Loader.lua'))() end },
         NoKey = { ["Roubar Construções"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/max2007killer/auto-build-not-limit/main/buildaboatv2obs.txt", true))() end }
     },
-    [17] = {
+    [21] = {
         Name = "Grow a Garden", Icon = "🌴",
         Key = { 
             ["Ronix Hub"] = function() loadstring(game:HttpGet("https://rawscripts.net/raw/Grow-a-Garden-Best-Autofarm-Script-GUI-73698"))() end,
-            ["Speed Hub GG"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua"))() end -- Speed Hub movido para cá
+            ["Speed Hub GG"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua"))() end
         },
         NoKey = {}
     },
-    [18] = {
+    [22] = {
         Name = "Campos de Batalha", Icon = "👊",
         Key = {},
         NoKey = { ["Aim Bot-Aim Lock"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Cyborg883/CombatGUI/refs/heads/main/TSBCombatGUI"))() end }
     },
-    [19] = {
+    [23] = {
         Name = "Death Ball", Icon = "💀",
         Key = { ["Native Hub"] = function() loadstring(game:HttpGet("https://getnative.cc/script/loader"))() end },
         NoKey = {}
     },
-    [20] = {
+    [24] = {
         Name = "Dead Rails", Icon = "🚂",
         Key = {},
         NoKey = { ["DR Hub"] = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/gumanba/Scripts/refs/heads/main/DeadRails", true))() end }
@@ -330,7 +360,7 @@ Holder.Size = UDim2.new(1, 0, 1, -45); Holder.Position = UDim2.new(0, 0, 0, 45);
 
 local Sidebar = Instance.new("ScrollingFrame", Holder)
 Sidebar.Size = UDim2.new(0, 200, 1, -10); Sidebar.Position = UDim2.new(0, 10, 0, 5); Sidebar.BackgroundTransparency = 1; Sidebar.ScrollBarThickness = 2
-Sidebar.CanvasSize = UDim2.new(0, 0, 0, 1000)
+Sidebar.CanvasSize = UDim2.new(0, 0, 0, 1400)
 local SideLayout = Instance.new("UIListLayout", Sidebar); SideLayout.Padding = UDim.new(0, 8)
 
 local Content = Instance.new("Frame", Holder)
